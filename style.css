@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    border: 0%;
+    margin: 0%;
+    font-family: 'Patrick Hand', cursive;
+    color: whitesmoke;
+}
+
+#main {
+    background-image: url(images/stars.jpg);
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+#screen {
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+}
+
+#outerDiv {
+    display: inline-block;
+    width: 97vw;
+    height: 70vh;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 1%;
+}
+
+#outputDiv {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 6em;
+    margin-left: 6%;
+}
+
+#numbersDiv {
+    display: inline-block;
+    width: 40vw;
+    height: 60vh;
+    margin-top: -13%;
+}
+
+.number {
+    font-size: 6em;
+    text-align: center;
+    color: transparent;
+    transition-duration: .5s;
+    font-weight: 500;
+    line-height: .8;
+}
+
+#num0 {
+    margin-right: 55%;
+    margin-top: -10%;
+    font-size: 5em; 
+}
+#num1 {
+    margin-left: 20%;
+    margin-top: -50%;
+    font-size: 8em;
+}
+#num2 {
+    margin-right: 80%
+}
+#num3 {
+    margin-right: 60%; 
+    font-size: 10em;
+}
+#num4 {
+    margin-left: 35%;
+}
+#num5 {
+    margin-left: 3%;
+    margin-top: -17%;
+    font-size: 8em;
+}
+#num6 {
+    margin-right: 20%;
+}
+#num7 {
+    margin-right: 33%;
+    margin-top: -20%;
+    font-size: 8em;
+}
+#num8 {
+    margin-left: 60%
+}
+#num9 {
+    margin-right: 10%;
+    font-size: 10em;
+}
+
+#operatorDiv {
+    height: 55vh;
+    width: 30vw;
+    float: right;
+    margin-right: 5%;
+    margin-top: -10%;
+    font-size: 6em;
+}
+.operator {
+    color: transparent;
+    transition-duration: .5s;
+    font-weight: 800;
+    line-height: .8;
+}
+
+#op-multiply {
+    margin-left: 20%;
+}
+#op-divide {
+    margin-left: 50%;
+}
+#op-sum {
+    margin-left: 60%;
+}
+#op-minus {
+    margin-left: 40%;
+    font-size: 2em;
+}
+#op-equal {
+    margin-left: 20%;
+    margin-top: -40%;
+    font-size: 1.4em;
+}
+#op-delete {
+    font-size: .5em;
+    margin-left: 10%;
+}
+#op-dot {
+    margin-top: -40%;
+    font-size: 2em;
+}
+
+.blink-me {
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: .2;
+    }
+}
